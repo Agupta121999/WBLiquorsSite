@@ -1,0 +1,415 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #222;
+    overflow-y:auto;
+}
+header {
+    background: linear-gradient(90deg, #a29696 60%, #585ff5 100%);
+    color: #fff;
+    padding: 5rem 0 2rem 0;
+    margin: 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    position:relative; 
+    width: 100%;
+}
+
+.MainLiquorsHead {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Navigation Bar Styles Start */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0;
+    transition: transform 0.2s;
+}
+
+nav ul li:hover {
+    transform: translateY(-4px) scale(1.08);
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 1.2rem;
+    border-radius: 24px;
+    transition: background 0.3s, color 0.3s;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 2px 8px rgba(78,84,200,0.08);
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background: #fff;
+    color: #4e54c8;
+    box-shadow: 0 4px 16px rgba(78,84,200,0.15);
+    text-decoration: none;
+}
+/*Navigation Bar Styles End*/
+/* Home Page Styles Start */
+section {
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 1rem auto;
+    max-width: 97.5vw;
+}
+.DoorDashBar {
+    background: #ff4c4c;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 2px;
+    border: black solid 1px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+.DoorDashBarLink {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #ff4c4c;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.365);
+    cursor: pointer;
+}
+
+.DoorDashBarLink span {
+    font-style: italic;
+    flex: 1;
+    text-align: center;
+    white-space:wrap;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.DoorDashLogo {
+    width: 150px;
+    height: 50px;
+    object-fit: contain;
+    background: #fff;      /* Add this line */
+    border-radius: 6px;    /* Optional: rounded corners */
+    padding: 2px;
+
+}
+
+main {
+    padding: 3rem;
+    max-width: none;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+main h1 {
+    font-size: 3rem;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 8px rgba(78, 84, 200, 0.581);
+    text-align: center;
+    color: #4e54c8;
+    margin:0;
+   
+}
+.carousel {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    margin-top: 100px;
+    width: 1500px;
+    max-width: none;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.group {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.carousel h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.card {
+    color: white;
+    width: 150px;
+    display: flex;
+    border-radius: 24px;
+    margin-left: 60px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.card {
+    /* ... */
+    will-change: transform; /* We should be nice to the browser - let it know what we're going to animate. */
+}
+.card.animate {
+    animation: scrolling 20s infinite running;
+}
+.card:not(.animate) {
+    animation: none; /* If the card is not animated, we don't want any animation. */
+}
+
+.card img {
+    width: 150%;
+    height: 150%;
+    margin: 0;
+    padding: 0;
+} 
+
+
+@keyframes scrolling {
+    10% {
+        transform: translateX(-1400px);
+    }
+    20% {
+        transform: translateX(-1100px);
+    }
+    30% {
+        transform: translateX(-800px);
+    }
+    40% {
+        transform: translateX(-500px);
+    }
+    50% {
+        transform: translateX(-200px);
+    }
+    60% {
+        transform: translateX(100px);
+    }
+    70% {
+        transform: translateX(300px);
+    }
+    80% {
+        transform: translateX(600px);
+    }
+    90% {
+        transform: translateX(900px);
+    }
+    
+    100% {
+        transform: translateX(1200px);
+    }
+}
+/*Home Page Styles End*/
+/* Contact Page Styles Start*/
+.Contact {
+    display: flex;
+    flex-direction: row;
+    align-items:Center;
+    justify-content:space-evenly;
+    padding: 10px;
+    margin: 2px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.Contactheader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+    padding: 20px;
+    background: #e0e0e0;
+    border-radius: 8px;
+}
+.Contact h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #4e54c8;
+    margin-bottom: 1.5rem;
+}
+.form-group-1{ 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 500px;
+    margin-bottom: 1.5rem;
+}
+
+.contact_info {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.Submit_Button {
+    background: #4e54c8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+#message {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical; /* Allows vertical resizing */
+}
+.Submit_Button:hover {
+    background: #3b3f9c;
+    transform: translateY(-4px);
+}
+
+/* Contact Page Styles End */
+
+/* Buttons */
+.circle-btn {
+    width: 480px;
+    height: 48px;
+    border-radius: 50%;
+    background: #4e54c8;
+    color: #9e2424;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(78,84,200,0.15);
+    transition: background 0.2s;
+}
+
+.circle-btn:hover {
+    background: #20269b;
+}
+
+.blogButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 100px;
+}
+
+.blogButtons button {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #4e54c8;
+    color: #fff;
+    border: none;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 8px 4px rgba(12, 239, 99, 0.943);
+    transition: background 0.2s;
+}
+.blog {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    width: 2000px;
+}
+.blog h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family:cursive;
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+}
+.blog p{
+    font-size: 1.3rem;
+    line-height: 2;
+    color: #333;
+    margin: 40px 190px;
+    word-spacing: 5px;
+    text-align: justify;
+}
+
+.blog-posts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+.product_image img{
+    width: 600px;
+       
+}
+
+footer {
+    text-align: center;
+    padding: 70px;
+    background: #222;
+    color: #fff;
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ccc;
+    justify-content: start;
+}

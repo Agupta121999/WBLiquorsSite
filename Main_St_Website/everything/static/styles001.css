@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #222;
+    overflow-y: auto;
+}
+header {
+    background: linear-gradient(90deg, #a29696 60%, #8d91e2 100%);
+    color: #fff;
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    position: relative; 
+    z-index: 10;
+}
+
+.MainLiquorsHead {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Navigation Bar Styles Start */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0;
+    transition: transform 0.2s;
+}
+
+nav ul li:hover {
+    transform: translateY(-4px) scale(1.08);
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 1.2rem;
+    border-radius: 24px;
+    transition: background 0.3s, color 0.3s;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 2px 8px rgba(78,84,200,0.08);
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background: #fff;
+    color: #4e54c8;
+    box-shadow: 0 4px 16px rgba(78,84,200,0.15);
+    text-decoration: none;
+}
+/*Navigation Bar Styles End*/
+/* Home Page Styles Start */
+.DoorDashBar {
+    background: #ff4c4c;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 2px;
+    border: black solid 1px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+}
+.DoorDashBarLink {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #ff4c4c;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    border: black solid 1px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.DoorDashBarLink span {
+    font-style: italic;
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.DoorDashLogo {
+    width: 80px;
+    height: 40px;
+    object-fit: contain;
+    background: #fff;      /* Add this line */
+    border-radius: 6px;    /* Optional: rounded corners */
+    padding: 2px;
+
+}
+
+/*
+main {
+    padding: 4rem;
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+*/
+.FeaturedSpecials h1 {
+    font-size: 60px;
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #000000;
+    text-align: center;
+}
+.FeaturedSpecials h2 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+    color: #1144ff;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* 5 images * 220px each */
+    max-width: 1000px;
+    border: #000000 solid 1px;
+    padding: 20px;
+}
+
+.carousel-images {
+    display: flex;
+    overflow: hidden;
+    width: 1100px; /* 5 images * 220px each */
+    height: 200px;
+    transition: transform 0.4s ease-in-out;
+    border: #000000 solid 1px;
+}
+
+.carousel-img {
+    min-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.202);
+    flex-shrink: 0;
+}
+
+.carousel-arrow {
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #191818;
+    font-size: 2rem;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: auto;
+    margin: 0 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+    margin-left: 5px;
+}
+
+
+.carousel-arrow:hover {
+    background: #836e6e;
+}
+/*Home Page Styles End*/
+/* Contact Page Styles Start*/
+.Contact {
+    display: flex;
+    flex-direction: column;
+    align-items:Center;
+    justify-content:Center;
+    padding: 10px;
+    margin: 2px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-group-1 { 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+}
+
+.contact_info {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.Submit_Button {
+    background: #4e54c8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+#message {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical; /* Allows vertical resizing */
+}
+.Submit_Button:hover {
+    background: #3b3f9c;
+    transform: translateY(-4px);
+}
+
+/* Contact Page Styles End */
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #222;
+    color: #fff;
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+}

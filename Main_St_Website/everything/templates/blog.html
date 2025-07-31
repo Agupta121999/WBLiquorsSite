@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+<main>
+    <h1> New Products </h1>
+    <div class="blogButtons">
+        <button class="blogbutton" onclick="ProductButton()">New Products</button>
+        <button class="blogbutton" onclick="SpecialsButton()">Specials</button>
+        <button class="blogbutton" onclick="EventsButton()">Events</button>
+    </div>
+
+</main>
+{% endblock %}
+
+
+{% block body %}
+
+
+<!-- New Products -->
+
+<div class="blog-content-newproducts">
+    <div class="blog-posts">
+        <div class="blog">
+            <h2>El Mexicano - Tequila</h2>
+            <p>El Mexicano Tequila is a premium handcrafted spirit born in the heart of Jalisco, Mexico, made from 100% blue weber agave cultivated in volcanic soil. It offers a bold and refined profile across its variants—Blanco, Reposado, and Añejo—each capturing the essence of tradition and flavor innovation.
+
+            Blanco delivers a crisp and vibrant experience with bright citrus notes, hints of pepper, and a clean herbal finish—perfect for cocktails or sipping neat.
+
+            Reposado, aged in oak barrels, smooths out with warm undertones of vanilla, toasted coconut, and spice, offering complexity without overpowering.
+
+            Añejo, aged longer for deeper character, reveals layers of caramel, roasted nuts, and smoky wood, making it an ideal choice for connoisseurs.
+
+            El Mexicano is more than tequila—it’s a statement. From its sleek artisanal bottle design to its meticulously balanced flavor palette, it’s engineered for moments that demand sophistication and soul. Whether you’re elevating a cocktail menu or gifting a taste of heritage, El Mexicano delivers an unforgettable pour every time.
+            </p>
+        </div>
+        <div class="product_image" style="display: flex; flex-direction: row; overflow: hidden;">
+            <img src= "{{ url_for('static', filename='blog_images/mexicano.png') }}" alt="Product Image" class="product-img" style="position: relative; min-width: 700px; right: 100px;">
+            <img src= "{{ url_for('static', filename='blog_images/mexicanorepo.webp') }}" alt="Product Image" class="product-img" style=" position: relative;right: 400px;">
+
+        </div>
+    </div>
+    <div class="blog-posts">
+        <div class="blog">
+            <h2>🍋 Lucky One Lemonade by High Noon: Sunshine in a Can - RTD</h2>
+            <p>
+
+            Lucky One Lemonade by High Noon brings a twist of serendipity to your sip. Crafted with real vodka and a splash of sparkling lemonade, it’s a refreshing escape wrapped in citrusy confidence. This isn’t your average hard seltzer—it’s a flavor-forward revelation designed for those who like their drinks light, crisp, and impossible to forget.
+
+            Flavor Profile: Bright and zesty lemon meets smooth vodka with a gentle fizz. No sugar overload, just a clean, balanced taste that lets the citrus shine.
+
+            Experience: Each can is a burst of golden hour energy—ideal for beachside hangs, backyard BBQs, or rooftop sunsets.
+
+            <br> <u><b> Visual Appeal:</b></u> Vibrant packaging radiates summer vibes, effortlessly fitting into party spreads and cooler lineups.
+
+            <br><u><b>Why It Stands Out:</b></u> vodka. Real juice. No artificial aftertaste. Just the kind of lemonade that makes you feel lucky to have found it.
+            </p>
+        </div>
+        <div class="product_image">
+            <img src="{{ url_for('static', filename='blog_images/Luckyone.webp') }}" alt="Description of the image">        </div>
+        </div>
+    <div class="blog-posts">
+        <div class="blog">
+            <h2>Casamigos Margaritas - RTD</h2>
+            <p>
+                Casamigos Margarita is a premium, ready-to-drink cocktail that combines the smoothness of Casamigos tequila with natural flavors and real juice, offering a refreshing twist on the classic margarita. Each 200ml can is crafted with 10% ABV, making it perfect for any occasion, whether you're lounging by the pool or celebrating with friends. With flavors like Passionfruit & Prickly Pear, Guava & Hibiscus, Strawberry & Colima Lime, and Classic Lime, there's a taste for everyone. Enjoy the vibrant packaging and the convenience of no mixing required, making it easy to savor this high-quality cocktail anytime, anywhere.
+            </p>
+        </div>
+        <div class="product_image">
+            <img src="{{ url_for('static', filename='blog_images/casamigospck.webp') }}" alt="Product Image" class="product-img">
+        </div>
+    </div>
+    <div class="blog-posts">
+        <div class="blog">
+            <h2>Absolut Cocktails - RTD</h2>
+            <p>
+            Absolut’s ready-to-drink cocktails deliver a vibrant bar experience in convenient, stylish cans, making them perfect for any social occasion. Each variety combines Absolut’s renowned vodka with bold flavors: the Berry Vodkarita offers a refreshing blend of juicy berries and citrus zest; the Grapefruit Paloma provides a tangy and slightly bitter twist with fresh grapefruit notes; the Mango Mule features sweet tropical mango paired with zesty lime and spicy ginger, reinventing the classic mule; and the Passionstar Martini captures the luscious taste of passion fruit mingled with vanilla and a hint of sparkling sweetness. These pre-mixed cocktails are crafted for quality, consistency, and instant enjoyment—no bartending skills required, just chill and serve.   
+            </p>
+        </div>
+        <div class="product_image" style="display: flex; justify-content: end; align-items: center; width:1000px ; height:500px ; position:relative; overflow: hidden; left: 0px; margin-bottom: 150px;">
+            <img src="{{ url_for('static',filename='blog_images/absolut1.webp') }}" alt="AbsolutCocktail" class="product-img" style="width: 500px; position: relative; left:325px ; z-index: -10;">
+            <img src="{{ url_for('static',filename='blog_images/absolut2.webp') }}" alt="AbsolutCocktail" class="product-img"  style="width: 500px; position: relative; left:70px; z-index: 10;">
+
+        </div>
+    </div>
+    <div class="blog-posts">
+        <div class="blog">
+            <h2>Two Chicks Cocktail - RTD</h2>
+            <p>
+             Two Chicks Cocktails is a women-owned brand specializing in ready-to-drink canned cocktails crafted with real premium spirits—such as vodka, tequila, gin, and whiskey—blended with fruit and botanicals for a refreshingly modern drinking experience. Each variety is designed for convenience and sociability, offering bar-quality flavors straight from the can at 5% ABV. Popular choices include the Sparkling Vodka Fizz (vodka with pear and elderflower), Sparkling Citrus Margarita (tequila with citrus), Sparkling Paloma (tequila and grapefruit), and unique blends like Vodka Cutea (vodka with peach, cucumber tea, and thyme). Fans appreciate their balance of flavor—often described as fresh, juicy, and aromatic, with a natural taste that appeals to those who prefer cocktails over traditional hard seltzers. These cocktails require no mixing: simply chill and pour over ice, and you can customize with garnishes for a personal touch. Two Chicks stands out for their commitment to both quality and creative flavors, making their cocktails well-suited for gatherings, outdoor events, or simply enjoying a bar-like drink at home without any preparation.   
+            </p>
+        </div>
+        <div class="product_image">
+            <img src="{{ url_for('static', filename='blog_images/twochicks.png') }}" alt="Product Image" class="product-img">
+        </div>
+    </div>
+</div>
+
+
+<!-- Specials -->
+<div class="blog-content-specials" style="display: none;">
+    <h2>Welcome to Our Blog!</h2>
+
+    <p>Here you will find the latest updates on our new products and special offers. Stay tuned for exciting news and exclusive deals!</p>
+
+
+</div>
+
+
+<!-- Events -->
+
+<div class="blog-content-events" style="display: none;">
+    <h2>Welcome to Our Blog!</h2>
+
+    <p>Here you will find the latest updates on our new products and special offers. Stay tuned for exciting news and exclusive deals!</p>
+    
+    <h3>Latest Posts</h3>
+    <ul>
+        <li><a href="/post1">Post 1: New Arrivals in Spirits</a></li>
+        <li><a href="/post2">Post 2: Special Discounts on Wines</a></li>
+        <li><a href="/post3">Post 3: Upcoming Beer Tasting Event</a></li>
+    </ul>
+
+</div>
+
+<script>
+    function ProductButton() {
+        document.querySelector('.blog-content-newproducts').style.display = 'block';
+        document.querySelector('.blog-content-specials').style.display = 'none';
+        document.querySelector('.blog-content-events').style.display = 'none';
+    }
+    function SpecialsButton() {
+        document.querySelector('.blog-content-newproducts').style.display = 'none';
+        document.querySelector('.blog-content-specials').style.display = 'block';
+        document.querySelector('.blog-content-events').style.display = 'none';
+    }
+    function EventsButton() {
+        document.querySelector('.blog-content-newproducts').style.display = 'none';
+        document.querySelector('.blog-content-specials').style.display = 'none';
+        document.querySelector('.blog-content-events').style.display = 'block';
+    }
+
+</script>
+
+{% endblock %}

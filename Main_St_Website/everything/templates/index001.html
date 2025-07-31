@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% set doordash_url = "https://www.doordash.com/convenience/store/26280854?cursor=eyJvZmZzZXQiOjAsImNvbnRlbnRfaWRzIjpbXSwicmVxdWVzdF9wYXJlbnRfaWQiOiIiLCJyZXF1ZXN0X2NoaWxkX2lkIjoiIiwicmVxdWVzdF9jaGlsZF9jb21wb25lbnRfaWQiOiIiLCJjcm9zc192ZXJ0aWNhbF9wYWdlX3R5cGUiOiJERUZBVUxUX0hPTUVQQUdFIiwicGFnZV9zdGFja190cmFjZSI6W10sInZlcnRpY2FsX2lkcyI6W10sInZlcnRpY2FsX2NvbnRleHRfaWQiOjM3LCJsYXlvdXRfb3ZlcnJpZGUiOiJVTlNQRUNJRklFRCIsInNpbmdsZV9zdG9yZV9pZCI6bnVsbCwic2VhcmNoX2l0ZW1fY2Fyb3VzZWxfY3Vyc29yIjpudWxsLCJjYXRlZ29yeV9pZHMiOlsxMDI0XSwiY29sbGVjdGlvbl9pZHMiOlsiNzQwODMwMTMwNDM4MjQyMzMwIiwiNzYzNDg1Nzg4MzEzNjE2NDA3IiwiODEyMjA1MzMzMDY0ODQzMjk2IiwiNzYzNDg1Nzg3ODM0MTg3ODA0IiwiODE3ODcxNjI3MDc3NTE3MzQxIiwiODExMDY3NDA0OTE4Njg1NzIzIiwiODE5ODc3NjQ1MjQ4MTM1MTk4IiwiMTQyNzIiLCI4MjI0MTYwOTY2NzU4MjM2NDUiLCIyMzQ1IiwiMjM3MiIsIjE2ODQiLCIxNjg2MiIsIjI2ODkiLCIxNTQ2NSIsIjEzNzMiLCIxNTM3IiwiMTA5NiIsIjE3NzY2IiwiMTAwMTAzNTIzNjAwMDQ5NzgyNSJdLCJpc19wYWdpbmF0aW9uX2ZhbGxiYWNrIjpudWxsLCJzb3VyY2VfcGFnZV90eXBlIjpudWxsLCJnZW9fdHlwZSI6IiIsImdlb19pZCI6IiIsImtleXdvcmQiOiIiLCJhZHNfY3Vyc29yX2NhY2hlX2tleSI6bnVsbCwidmlzdWFsX2Fpc2xlc19pbnNlcnRpb25faW5kZXgiOm51bGwsImJhc2VDdXJzb3IiOnsicGFnZV9pZCI6IiIsInBhZ2VfdHlwZSI6Ik5PVF9BUFBMSUNBQkxFIiwiY3Vyc29yX3ZlcnNpb24iOiJGQUNFVCJ9LCJ2ZXJ0aWNhbF9uYW1lcyI6e30sIml0ZW1faWRzIjpbXSwibWVyY2hhbnRfc3VwcGxpZWRfaWRzIjpbXSwiaXNfb3V0X29mX3N0b2NrIjpudWxsLCJtZW51X2lkIjpudWxsLCJ0cmFja2luZyI6bnVsbCwiZGlldGFyeV90YWciOm51bGwsIm9yaWdpbl90aXRsZSI6bnVsbCwicmFua2VkX3JlbWFpbmluZ19jb2xsZWN0aW9uX2lkcyI6bnVsbCwicHJldmlvdXNseV9zZWVuX2NvbGxlY3Rpb25faWRzIjpbXSwicHJlY2hlY2tvdXRfYnVuZGxlX3NlYXJjaF9pbmZvIjpudWxsLCJ0b3RhbF9pdGVtc19vZmZzZXQiOjAsInRvdGFsX2Fkc19wcmV2aW91c2x5X2JsZW5kZWQiOjAsInZlcnRpY2FsX3RpdGxlIjpudWxsLCJtdWx0aV9zdG9yZV9lbnRpdGllcyI6W10sImN1cnNvclZlcnNpb24iOiJGQUNFVF9DT05URU5UX09GRlNFVCIsInBhZ2VJZCI6IiIsInBhZ2VUeXBlIjoiTk9UX0FQUExJQ0FCTEUifQ==&pickup=false" %}
+
+{% block body %}
+<section class="DoorDashBar">
+    <a href="{{ doordash_url }}" target="_blank" class="DoorDashBarLink">
+        <span>
+            <img src="{{ image_file }}" alt="DoorDash Logo" class="DoorDashLogo">
+            Order Online from DoorDash
+        </span>
+        <span>
+            <img src="{{ image_file }}" alt="DoorDash Logo" class="DoorDashLogo">
+            Order Online from DoorDash
+        </span>
+        <span>
+            <img src="{{ image_file }}" alt="DoorDash Logo" class="DoorDashLogo">
+            Order Online from DoorDash
+        </span>                
+    </a>
+</section>
+<main class="FeaturedSpecials">
+    <section class="FeaturedSpecialsWine">
+    <h1>Featured Specials</h1>
+    <h2>Wine</h2>
+    <div class="carousel">
+        <button class="carousel-arrow prev-btn">&#8592;</button>
+        <div class="carousel-images">
+            <img src="{{ image_file }}" alt="Wine 1" class="carousel-img">
+            <img src="{{ image_file }}" alt="Wine 2" class="carousel-img">
+            <img src="{{ image_file }}" alt="Wine 3" class="carousel-img">
+            <img src="{{ image_file }}" alt="Spirit 4" class="carousel-img">
+            <img src="{{ image_file }}" alt="Spirit 5" class="carousel-img">
+            <img src="{{ image_file }}" alt="Spirit 6" class="carousel-img">
+            <img src="{{ image_file }}" alt="Spirit 7" class="carousel-img">
+            <img src="{{ image_file }}" alt="Spirit 8" class="carousel-img">
+            <img src="{{ image_file }}" alt="Spirit 9" class="carousel-img">
+        </div>
+        <button class="carousel-arrow next-btn">&#8594;</button>
+    </div>
+</section>
+    <section class="FeaturedSpecialsSpirits">
+        <h2>Spirits</h2>
+        <div class="carousel">
+            <button class="carousel-arrow left">&#8592;</button>
+            <div class="carousel-images">
+                <img src="{{ image_file }}" alt="Spirit 1" class="carousel-img">
+                <img src="{{ image_file }}" alt="Spirit 2" class="carousel-img">
+                <img src="{{ image_file }}" alt="Spirit 3" class="carousel-img">
+                <img src="{{ image_file }}" alt="Spirit 4" class="carousel-img">
+                <img src="{{ image_file }}" alt="Spirit 5" class="carousel-img">
+                <img src="{{ image_file }}" alt="Spirit 6" class="carousel-img">
+                <img src="{{ image_file }}" alt="Spirit 7" class="carousel-img">                
+                <img src="{{ image_file }}" alt="Spirit 8" class="carousel-img">
+            </div>
+            <button class="carousel-arrow right">&#8594;</button>
+        </div>
+    </section>
+    <section class="FeaturedSpecialsBeer">
+        <h2>Beer</h2>
+        <div class="carousel">
+            <button class="carousel-arrow left">&#8592;</button>
+            <div class="carousel-images">
+                <img src="{{ image_file }}" alt="Beer 1" class="carousel-img active">
+                <img src="{{ image_file }}" alt="Beer 2" class="carousel-img">
+                <img src="{{ image_file }}" alt="Spirit 3" class="carousel-img">
+                <img src="{{ image_file }}" alt="Spirit 4" class="carousel-img">
+                <img src="{{ image_file }}" alt="Spirit 5" class="carousel-img">
+                <img src="{{ image_file }}" alt="Spirit 6" class="carousel-img">
+                <img src="{{ image_file }}" alt="Beer 7" class="carousel-img">
+            </div>
+            <button class="carousel-arrow right">&#8594;</button>
+        </div>
+    </section>  
+</main>
+
+<div class="WinesButton">
+    <p> Button for Wine Goes Here</p>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/Spirits">Main</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+    <div class="SpiritsButton">
+    <p> Button for Wine Goes Here</p>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/Spirits">Main</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+</div>
+    <div class="BeerButton">
+    <p> Button for Beer Goes Here</p>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/Spirits">Main</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+<footer>
+    <p>&copy; 2025 Abhishek Gupta</p>
+</footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+{% endblock %}

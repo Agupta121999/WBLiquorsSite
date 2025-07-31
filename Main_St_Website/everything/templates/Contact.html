@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+
+
+{% block title %}
+
+<!-- Example for your Contact form -->
+<form class="Contact">
+  <h1>Got something in mind? <br> Tell us what you'd love to see — we're all ears!</h1>
+  <div class="Contactheader">
+    <div class = "form-group-1">
+      <input type="text" class = contact_info id="name" name="name" placeholder="Name...">
+    </div>
+    <div class = "form-group-1">
+      <input type="email" class = contact_info id="email" name="email" placeholder="Email...">
+    </div>
+    <div class = "form-group-1">
+      <input type="tel" class = contact_info id="phone" name="phone" placeholder="Phone Number...">
+    </div>
+    <div class = "form-group-1">
+      <textarea id="message" class = contact_info name="message" placeholder="Leave Us A Review or Make A Product Request Here..."></textarea>
+    </div>
+    <button class = "Submit_Button" type="submit">Send</button>
+  </div>
+</form>
+{% endblock %}
+
+{% block body %}{% endblock %}
